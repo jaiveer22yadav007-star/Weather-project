@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #232931;
+  color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  width: 90%;
+  max-width: 600px;
+  background: #428098;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  color: #27ba89;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Search Bar */
+form {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 0.8rem;
+  border-radius: 25px;
+  border: 2px solid #4aebb5;
+  background: #232931;
+  color: #EEEEEE;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 10px #4ECCA3;
+}
+
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  background-color: #4ECCA3;
+  color: #232931;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3ab68a;
+}
+
+/* Weather Display */
+.weather-display {
+  background: #232931;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.weather-main h2 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.weather-main p {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.detail-item {
+  background: #393E46;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Saved Locations */
+.saved-locations h2 {
+  color: #4ECCA3;
+  margin-top: 2rem;
+}
+
+.saved-locations ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.saved-locations li {
+  background: #4ECCA3;
+  color: #232931;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.saved-locations li:hover {
+  transform: scale(1.1);
+}
